@@ -41,7 +41,7 @@ public class Board extends View {
         }
 
     }
-
+ //test
     @Override
     protected void onMeasure(int width, int height){
         //get user phone smallest dimensions to calculate board size
