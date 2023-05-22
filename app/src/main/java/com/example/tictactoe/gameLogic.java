@@ -43,7 +43,7 @@ public class gameLogic {
             }
         }
         player = 1;
-        //find player
+        
         playAgainBtn.setVisibility(View.GONE);
         homeBtn.setVisibility(View.GONE);
         playerTurn.setText((playerName[0] + "'s turn"));
