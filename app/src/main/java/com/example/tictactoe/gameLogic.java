@@ -35,6 +35,8 @@ public class gameLogic {
             return false;
         }
     }
+
+    //rest game
     public void resetGame(){
         for (int i=0; i<3;i++){
             for (int j=0; j<3;j++){
@@ -42,7 +44,7 @@ public class gameLogic {
             }
         }
         player = 1;
-
+        //find player
         playAgainBtn.setVisibility(View.GONE);
         homeBtn.setVisibility(View.GONE);
         playerTurn.setText((playerName[0] + "'s turn"));
