@@ -35,18 +35,20 @@ public class gameLogic {
             return false;
         }
     }
-//    public void resetGame(){
-//        for (int i=0; i<3;i++){
-//            for (int j=0; j<3;j++){
-//                gameBoard[i][j] = 0;
-//            }
-//        }
-//        player = 1;
-//
-//        playAgainBtn.setVisibility(View.GONE);
-//        homeBtn.setVisibility(View.GONE);
-//        playerTurn.setText((playerName[0] + "'s turn"));
-//    }
+
+    //rest game
+    public void resetGame(){
+        for (int i=0; i<3;i++){
+            for (int j=0; j<3;j++){
+                gameBoard[i][j] = 0;
+            }
+        }
+        player = 1;
+        //find player
+        playAgainBtn.setVisibility(View.GONE);
+        homeBtn.setVisibility(View.GONE);
+        playerTurn.setText((playerName[0] + "'s turn"));
+    }
 
     //check for the winner
     public boolean winner(){
