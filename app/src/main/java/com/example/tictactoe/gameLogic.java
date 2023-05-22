@@ -43,7 +43,7 @@ public class gameLogic {
             }
         }
         player = 1;
-        
+
         playAgainBtn.setVisibility(View.GONE);
         homeBtn.setVisibility(View.GONE);
         playerTurn.setText((playerName[0] + "'s turn"));
@@ -61,13 +61,11 @@ public class gameLogic {
                 }
             }
         }
-        //check rows and see if all 3 spot is the same
         for(int r=0;r<3;r++){
             if(gameBoard[r][0] == gameBoard[r][1] &&gameBoard[r][0] == gameBoard[r][2] && gameBoard[r][0] !=0){
                 isWinner = true;
             }
         }
-        //check columes and see if all 3 spot is the same
         for(int c=0;c<3;c++){
             if(gameBoard[0][c] == gameBoard[1][c] &&gameBoard[0][c] == gameBoard[2][c] && gameBoard[0][c] !=0){
                 isWinner = true;
