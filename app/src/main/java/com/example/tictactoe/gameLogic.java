@@ -43,7 +43,11 @@ public class gameLogic {
             }
         }
         player = 1;
+<<<<<<< HEAD
 
+=======
+        //find player
+>>>>>>> parent of ff7d546 (fond player uopdate)
         playAgainBtn.setVisibility(View.GONE);
         homeBtn.setVisibility(View.GONE);
         playerTurn.setText((playerName[0] + "'s turn"));
